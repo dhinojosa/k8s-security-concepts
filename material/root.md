@@ -67,4 +67,3 @@ system:serviceaccount:<namespace>:<service account name>
 3. A default ServiceAccount is automatically created for each namespace by default.
 
 ![Sample Image](./images/KubernetesArchitecture.png)
-1. 
