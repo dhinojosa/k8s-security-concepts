@@ -14,7 +14,6 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
-*~
 # Auto-generated tag files
 tags
 # Persistent undo
@@ -85,15 +84,6 @@ flycheck_*.el
 .idea/
 
 
-/manifests/3_users/anika/anika.crt
-/manifests/3_users/anika/anika.csr
-/manifests/3_users/anika/anika.key
-/manifests/3_users/maria/maria.crt
-/manifests/3_users/maria/maria.csr
-/manifests/3_users/maria/maria.key
-/manifests/3_users/nia/nia.crt
-/manifests/3_users/nia/nia.csr
-/manifests/3_users/nia/nia.key
-/manifests/3_users/pam/pam.crt
-/manifests/3_users/pam/pam.csr
-/manifests/3_users/pam/pam.key
+/manifests/3_users/**/*.crt
+/manifests/3_users/**/*.csr
+/manifests/3_users/**/*.key
