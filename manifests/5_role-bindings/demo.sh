@@ -3,8 +3,10 @@ kubectl create namespace data-engineering
 kubectl create namespace data-science
 kubectl create namespace operations
 
+kubectl apply -f pod-reader-role-binding.yaml
+
 CLUSTER_NAME=gke_my-gloud-playground_us-central1-c_cluster-1
-kubectl config --kubeconfig=~/.kube/pam-config set-context data-engineering \
+kubectl config --kubeconfig=../3_users/pam/pam-config set-context data-engineering \
 --cluster=$CLUSTER_NAME
 --namespace=data-engineering
 --user=pam

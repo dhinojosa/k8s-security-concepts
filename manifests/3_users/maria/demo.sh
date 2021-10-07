@@ -1,12 +1,12 @@
-openssl genrsa -out maria.key 2048
-openssl req -new -key maria.key -out maria.csr -subj "/CN=maria/O=data-science/O=managers/O=senior-engineers"
+    openssl genrsa -out maria.key 2048
+    openssl req -new -key maria.key -out maria.csr -subj "/CN=maria/O=data-science/O=managers/O=senior-engineers"
 
 # Let's just get the key so that the kubernetes cluster can verify,
 # or you can get a copy of the ca.cert. Use tr to remove the any new lines
 # We will copy it to the signing-request.yaml
 cat maria.csr | base64 | tr -d '\n'
 
-kubectl create -f maria-signing-request.yaml
+kubectl create -f signing-request.yaml
 
 # check to see if the user has requested access
 kubectl get csr
