@@ -7,7 +7,7 @@ clusters:
 contexts:
 - context:
     cluster: gcloud-gke-central
-    user: pam
+    user: anika
   name: gcloud-gke-central
 current-context: "gcloud-gke-central"
 kind: Config
